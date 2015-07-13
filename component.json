@@ -1,6 +1,6 @@
 {
   "name": "cordova-ios",
-  "version": "4.0.1-dev",
+  "version": "3.8.0",
   "repository": "apache/cordova-ios",
   "main": "CordovaLib/cordova.js",
   "scripts": [
