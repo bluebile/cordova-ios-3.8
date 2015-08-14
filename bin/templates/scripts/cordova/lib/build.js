@@ -85,7 +85,8 @@ module.exports.run = function (argv) {
         if (args.provisioningProfile) {
             extraConfig += 'PROVISIONING_PROFILE = ' + args.provisioningProfile + '\n';
         }
-        return Q.nfcall(fs.writeFile, path.join(__dirname, '..', 'build-extras.xcconfig'), extraConfig, 'utf-8');
+        var configuration = args.release ? 'Release' : 'Debug';
+        return Q.nfcall(fs.writeFile, path.join(__dirname, '..', 'build-' + configuration.toLowerCase() + '.xcconfig'), extraConfig, 'utf-8');
     }).then(function () {
         var configuration = args.release ? 'Release' : 'Debug';
 
