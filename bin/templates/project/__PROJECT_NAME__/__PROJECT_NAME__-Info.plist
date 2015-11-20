@@ -76,6 +76,11 @@
 			<false/>
 		</dict>
 	</dict>
+	<key>NSAppTransportSecurity</key>
+    	<dict>
+        	<key>NSAllowsArbitraryLoads</key>
+        	<true/>
+    	</dict>
 	<key>CFBundleIdentifier</key>
 	<string>--ID--</string>
 	<key>CFBundleInfoDictionaryVersion</key>
